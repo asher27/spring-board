@@ -37,7 +37,7 @@ class ArticleControllerTest {
 
     }
 
-    @Disabled("구현 중")
+//    @Disabled("구현 중")
     @DisplayName("[View][GET] 게시글 상세페이지 - 정상 호출")
     @Test
     public void givenNothing_whenRequestingArticlesView_thenReturnArticleView() throws Exception {
