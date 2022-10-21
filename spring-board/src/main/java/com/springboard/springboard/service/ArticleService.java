@@ -28,7 +28,7 @@ public class ArticleService {
             return articleRepository.findAll(pageable).map(ArticleDto::from);
         }
 
-        
+
         return switch (searchType) {
             case TITLE -> articleRepository.findByTitleContaining(searchKeyword, pageable).map(ArticleDto::from);
             case CONTENT -> articleRepository.findByContentContaining(searchKeyword, pageable).map(ArticleDto::from);
