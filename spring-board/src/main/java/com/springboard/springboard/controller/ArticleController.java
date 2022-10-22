@@ -38,6 +38,8 @@ public class ArticleController {
         Page<ArticleResponse> articleResponsePage = articleService.searchArticles(searchType, searchValue, pageable)
                 .map(ArticleResponse::from);
         List<Integer> barNumbers = paginationService.getPaginationBarNumbers(pageable.getPageNumber(), articleResponsePage.getTotalPages());
+
+
         map.addAttribute("articles",articleResponsePage);
         map.addAttribute("paginationBarNumbers",barNumbers);
         return "articles/index";
