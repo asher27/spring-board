@@ -89,7 +89,7 @@ public class ArticleController {
     public String postNewArticle(
             @AuthenticationPrincipal BoardPrincipal boardPrincipal,
             ArticleRequest articleRequest) {
-        // TODO: 인증 정보를 넣어줘야 한다.
+
         articleService.saveArticle(articleRequest.toDto(boardPrincipal.toDto()));
 
         return "redirect:/articles";
