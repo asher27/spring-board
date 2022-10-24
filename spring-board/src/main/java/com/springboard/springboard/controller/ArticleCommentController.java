@@ -1,7 +1,6 @@
 package com.springboard.springboard.controller;
 
 
-import com.springboard.springboard.dto.UserAccountDto;
 import com.springboard.springboard.dto.request.ArticleCommentRequest;
 import com.springboard.springboard.dto.security.BoardPrincipal;
 import com.springboard.springboard.service.ArticleCommentService;

@@ -2,9 +2,7 @@ package com.springboard.springboard.controller;
 
 import com.springboard.springboard.domain.constant.FormStatus;
 import com.springboard.springboard.domain.constant.SearchType;
-import com.springboard.springboard.dto.UserAccountDto;
 import com.springboard.springboard.dto.request.ArticleRequest;
-import com.springboard.springboard.dto.response.ArticleCommentResponse;
 import com.springboard.springboard.dto.response.ArticleResponse;
 import com.springboard.springboard.dto.response.ArticleWithCommentsResponse;
 import com.springboard.springboard.dto.security.BoardPrincipal;
