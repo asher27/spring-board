@@ -104,10 +104,10 @@ class JpaRepositoryTest {
 
     @EnableJpaAuditing
     @TestConfiguration
-    public static class TestJpaConfig {
+    static class TestJpaConfig {
 
         @Bean
-        public AuditorAware<String> auditorAware() {
+        AuditorAware<String> auditorAware() {
             return () -> Optional.of("uno");
         }
     }
